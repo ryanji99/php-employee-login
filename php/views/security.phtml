@@ -1,0 +1,52 @@
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Reset Password</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../../css/index.css">
+</head>
+<body>
+<h5>For additional security reasons, please answer the following security questions</h5>
+<form method="POST" action="security.php">
+    <?php
+    if($this->q1 == 1) {
+        echo "<p>What was your childhood nickname?<p>";
+    } else if($this->q1 == 2) {
+        echo "<p>In what city did you meet your spouse/significant other?<p>";
+    } else if($this->q1 == 3) {
+        echo "<p>What is the name of your favorite childhood friend?<p>";
+    } else if($this->q1 == 4) {
+        echo "<p>What is your oldest sibling's middle name?<p>";
+    } else if($this->q1 == 5) {
+        echo "<p>What school did you attend for sixth grade?<p>";
+    } else {
+        echo "<p>What is your oldest cousin's first and last name?<p>";
+    }
+    ?>
+    <label>Answer </label>
+    <input type='text' id='answer1' name='answer1' required>
+
+    <?php
+    if($this->q2 == 1) {
+        echo "<p>In what city or town did your mother and father meet?<p>";
+    } else if($this->q2 == 2) {
+        echo "<p>What was the last name of your third grade teacher?<p>";
+    } else if($this->q2 == 3) {
+        echo "<p>In what city does your nearest sibling live?<p>";
+    } else if($this->q2 == 4) {
+        echo "<p>What is your maternal grandmother's maiden name?<p>";
+    } else if($this->q2 == 5) {
+        echo "<p>In what city or town was your first job?<p>";
+    } else {
+        echo "<p>Where were you when you first heard about 9/11?<p>";
+    }
+    ?>
+    <label>Answer </label>
+    <input type='text' id='answer2' name='answer2' required><br>
+    <p>For verification, enter your username</p>
+    <label>Username </label>
+    <input type='text' id='username' name='username' required>
+    <br>
+    <button type='submit' class='button'>Proceed</button>
+</body>
+</html>

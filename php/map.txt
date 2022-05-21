@@ -1,0 +1,13 @@
+localhost->
+		login.phtml
+				POST->login.php
+				->forgot_user.php
+				->forgot_password.php
+				->sign_up.php
+	
+login.php->welcome.php->welcome.phtml->'../file/company_confidential_file.txt' 
+
+forgot_user.php->forgot_user.phtml->forgot_user_emailer.php!!!!		-> Sends email->
+forgot_password->forgot_password.phtml->forgot_password_emailer.php!!!!	-> Sends email-> security.php	-> security2.phtml -> password_success.php
+sign_up.php->sign_up.phtml->registration_emailer.php!!!!			-> Sends email-> registration_success.php
+

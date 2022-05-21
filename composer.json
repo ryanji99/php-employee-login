@@ -1,0 +1,13 @@
+{
+    "require": {
+        "phpmailer/phpmailer": "^6.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "": ["php"],
+            "DataGateway\\": ["php/datagateway"],
+            "Model\\": ["php/model"],
+            "Utils\\": ["php/utils"]
+        }
+    }
+}

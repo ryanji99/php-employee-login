@@ -1,0 +1,8 @@
+nbproject/
+vendor/
+.phpunit*
+configuration.xml
+config.php
+.DS_store
+launch.json
+.idea

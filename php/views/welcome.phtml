@@ -1,0 +1,11 @@
+<?php
+      echo "Hello, " . $this->firstName . " " . $this->lastName . "<br>";
+      echo "You have logged in " . $this->loginTimes . " times.<br>";
+      echo "Last login date: " . date("m/d/Y") . "<br>";
+      echo "<br>";
+      echo "You can download the company file below:<br>";
+      echo "<a href='../file/company_confidential_file.txt' download>company_confidential_file.txt</a></br></br>";
+
+      echo "<a href='2fa.php'>Enable 2-Factor Authentication</a></br></br>";
+      echo "<a href='logout.php'>Logout</a>";
+?>
